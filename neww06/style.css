@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  color: rgb(10, 10, 10);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #242222;
+}
+
+ul {
+  list-style: none;
+}
+
+.containers {
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+/*Nav*/
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.logo {
+  width: 110px;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul a {
+  padding: 2px;
+}
+
+.main-nav ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #242222;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.home-cards a{
+  color: blue;
+}
+
+.home-cards h3{
+  font-size: 1.2rem;
+}
+/* homecards */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.home-cards img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xbox .content p {
+    display: none;
+  }
+  .xbox h2 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.deal{
+  width: 100%;
+  height: 400px;
+  background: url('./ms_img/img/slide1.png') no-repeat center center/cover;
+  margin-bottom: 20px;
+  position: relative;
+}
+.deal .content{
+  width: 100%;
+  padding: 50px 0 0 30px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+.deal p{
+  margin: 10px 0 20px;
+}
+
+.xbox {
+  width: 100%;
+  height: 350px;
+  background: url('./ms_img/img/xbox.png') no-repeat center center/cover;
+  margin-bottom: 20px;
+}
+
+.xbox .content {
+  width: 40%;
+  padding: 50px 0 0 30px;
+}
+
+.xbox p {
+  margin: 10px 0 20px;
+}
+
+.btn{
+  padding: 9px;
+  color: #ffffff;
+  background-color: black;
+}
+
+.nature{
+  width: 100%;
+  background: url('./ms_img/img/carbon.jpg') no-repeat center center/cover;
+  margin-bottom: 0;
+  height: 150px;
+}
+
+.nature .nat{
+  color: #ffffff;
+  padding: 75px 0 0 20px;
+}
